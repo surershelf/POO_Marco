@@ -1,0 +1,18 @@
+package application;
+
+import application.model.Tarefa;
+
+public class App {
+    public static void main(String[] args) {
+
+        Tarefa t = new Tarefa();
+        t.setDescricao("Teste de Tarefa");
+        t.setConcluido(false);
+
+        System.out.println(t.getDetalhes());
+
+        Tarefa t2 = new Tarefa("Segundo Teste");
+
+        System.out.println(t2.getDetalhes());
+    }
+}
